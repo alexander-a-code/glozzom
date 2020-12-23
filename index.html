@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <!--NAVIGATION-->
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
       <a href="index.html" class="navbar-brand">Glozzom</a>
@@ -43,7 +44,7 @@
     </div>
   </nav>
 
-    <!-- SHOWCASE SLIDER -->
+    <!-- SHOWCASE SLIDER carousel slider-->
     <section id="showcase">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -98,11 +99,69 @@
       </div>
     </section>
 
-</div>
+    <!--HOME ICONS SECTION-->
 
+    <section id="home-icons" class="py-5">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-4 mb-4 text-center">
+            <i class="fas fa-cog fa-3x mb-2"></i>
+            <h3>Turning Gears</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, at.</p>
+          </div>
+          
+          <div class="col-md-4 mb-4 text-center">
+            <i class="fas fa-cloud fa-3x mb-2"></i>
+            <h3>Sending Data</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, at.</p>  
+          </div>
+          
+          <div class="col-md-4 mb-4 text-center">
+            <i class="fas fa-cart-plus fa-3x mb-2"></i>
+            <h3>Making Money</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, at.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!--HOME HEADING SECTION Are You Ready To Get Started?-->
+  <section id="home-heading" class="p-5">
+      <div class="dark-overlay">
+        <div class="row">
+          <div class="col">
+              <div class="container pt-5">
+                <h1>Are You Ready To Get Started?</h1>
+                <p class="d-none d-md-block">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas alias aut, nostrum vitae magni fugiat reiciendis eum adipisci quod voluptatibus.
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    <!--INFO SECTION laptop pic-->
+    <section id="info" class="py-3">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-6 align-self-center">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam possimus nulla sit? Nobis aspernatur sint dolores quaerat, numquam incidunt nemo.</p>
+            <div class="btn btn-outline-danger btn-large">Learn More</div>
+          </div>
+
+          <div class="col-md-6">
+            <img src="/img/laptop.png" alt="Laptop" class="img-fluid">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
@@ -113,6 +172,12 @@
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+
+    //Configure Slider
+    $('carousel').carousel({
+      interval:6000, 
+      pause: 'hover'
+    });
   </script>
 </body>
 
