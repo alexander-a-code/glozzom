@@ -77,10 +77,14 @@ body {
 #page-header {
   height: 200px;
   background: url(../img/image1.jpg);
-  background-position: 0 -360px;
+  background-position: 0 -360px; // 0 = x direction -360 = y direction so Up
   background-attachment: fixed;
   color: #fff;
   border-bottom: 1px solid #eee;
   padding-top: 15px;
+}
+
+.about-img {
+  margin-top: -50px;
 }
 //ABOUT END**********************************************************************************
